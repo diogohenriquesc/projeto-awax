@@ -859,14 +859,18 @@ footer {
 
 .footer-links ul {
     list-style: none;
+    display: flex;
+    gap: 10px;
 }
 
 .footer-links li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #373737;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 5px;
 }
 
 .footer-links li:hover {
@@ -939,6 +943,7 @@ footer {
 
     .menu-buttom {
         display: block;
+        cursor: pointer;
     }
 
     header {
