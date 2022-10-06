@@ -35,6 +35,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.menu {
+    transition: all .4s ease-in-out;
+}
 
 .menu ul {
     list-style: none;
@@ -63,6 +66,15 @@ header {
 
 .menu-buttom {
     display: none;
+    transition: all .4s ease-in-out;
+}
+
+.show {
+    right: 0 !important;
+}
+
+.rotate {
+    rotate: -90deg;
 }
 
 .banner {
@@ -931,14 +943,14 @@ footer {
 
 @media (min-width: 450px) and (max-width: 800px) {
     .menu {
-        display: none;
+        display: block;
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 90%);
         width: 60%;
         height: calc(100vh - 100px);
         top: 100px;
-        right: 0;
+        right: -500px;
     }
 
     .menu-buttom {
@@ -1065,14 +1077,14 @@ footer {
 
 @media (max-width: 450px) {
     .menu {
-        display: none;
+        display: block;
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 90%);
         width: 60%;
         height: calc(100vh - 100px);
         top: 100px;
-        right: 0;
+        right: -500px;
     }
 
     .menu-buttom {

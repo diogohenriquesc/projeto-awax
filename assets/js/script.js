@@ -1,16 +1,13 @@
-var button = window.document.querySelector('.menu-buttom');
-button.addEventListener('click', abrirMenu);
+const button = document.querySelector('.menu-buttom');
 
-var isOpen = false;
+button.addEventListener('click', () => {
+	const menu = document.querySelector('.menu');
 
-function abrirMenu() {
-	var menu = window.document.querySelector('.menu');
-
-	if (isOpen == false) {
-		menu.style = 'display: block';
-		isOpen = true;
+	if (!menu.classList.contains('show')) {
+		menu.classList.add('show');
+		button.classList.add('rotate');
 	} else {
-		menu.style = 'display: none';
-		isOpen = false;
+		menu.classList.remove('show');
+		button.classList.remove('rotate');
 	}
-}
+});
